@@ -1,0 +1,11 @@
+.primaryButton:link {
+    color: #fff;
+    background-color: rgb(54, 154, 184);
+    display: inline-flex;
+    padding: 9px;
+    border-radius: 8px;
+    text-decoration: none;
+    border: 1px solid rgb(54, 154, 184);
+    font-size: 17px;
+    font-weight: 600;;
+}
