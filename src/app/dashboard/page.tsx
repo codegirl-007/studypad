@@ -22,24 +22,6 @@ async function getDashboard() {
 export default async function Page() {
   const model = await getDashboard()
 
-  const inProgressItems: ReactElement[] = model.inProgress.map(item => {
-    return (
-      <li>
-        <p>{item.title}</p>
-        <p>{item.type}</p>
-      </li>
-    )
-  })
-
-  const completedItems: ReactElement[] = model.inProgress.map(item => {
-    return (
-      <li>
-        <p>{item.title}</p>
-        <p>{item.type}</p>
-      </li>
-    )
-  })
-
   return (
     <div>
       <h1>Hello!</h1>

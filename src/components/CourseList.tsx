@@ -1,13 +1,16 @@
 import { Course } from '@/interfaces/course'
+import CourseListItem from '@/components/CourseListItem'
 export default function CourseList(props: { items: any; }) {
   const items = props.items;
   const formattedList = items.map((item: Course) => {
     return (
-      <li key="item.title">{item.title}</li>
+      <CourseListItem item={item} key={crypto.randomUUID()} />
     )
   })
 
   return (
-    <ul>{formattedList}</ul>
+    <ul>
+      {formattedList}
+    </ul>
   )
 }
