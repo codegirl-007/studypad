@@ -1,17 +1,7 @@
 import Image from "next/image";
 import styles from "./page.module.css";
-import { Georama, Albert_Sans } from "next/font/google";
+import { georama, albert_sans } from "@/fonts";
 import PrimaryLinkButton from "@/components/PrimaryLinkButton";
-
-export const georama = Georama({
-  subsets: ['latin'],
-  display: 'swap',
-})
-
-export const albert_sans = Albert_Sans({
-  subsets: ['latin'],
-  display: 'swap',
-})
 
 export default async function Home() {
   return (

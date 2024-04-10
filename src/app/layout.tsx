@@ -19,7 +19,6 @@ export default function RootLayout({
         <div className="page-wrapper">
           <Header />
             {children}
-          <Footer />
         </div>
       </body>
     </html>

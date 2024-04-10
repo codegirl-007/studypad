@@ -1,11 +1,6 @@
 import styles from '@/components/header.module.css'
 import PrimaryLinkButton from './PrimaryLinkButton';
-import { Albert_Sans } from 'next/font/google';
-
-export const albert_sans = Albert_Sans({
-  subsets: ['latin'],
-  display: 'swap',
-});
+import { albert_sans } from '@/fonts';
 
 export default function Header() {
   return (

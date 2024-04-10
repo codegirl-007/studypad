@@ -1,11 +1,6 @@
 import Link from "next/link";
 import styles from "@/components/primarylinkbutton.module.css"
-import {Albert_Sans} from 'next/font/google';
-
-export const albert_sans = Albert_Sans({
-  subsets: ['latin'],
-  display: 'swap',
-})
+import { albert_sans } from "@/fonts";
 
 export default function PrimaryLinkButton(props: any) {
   return (
